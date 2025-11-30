@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淨水場水質監測地圖</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌊 淨水場水質監測地圖</h1>
+            <div class="status-info">
+                <span id="update-time">更新中...</span>
+                <span id="data-count">資料點: 加載中</span>
+                <button id="refresh-btn" class="refresh-btn">🔄 立即刷新</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="map" class="map"></div>
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>淨水場列表</h2>
+                    <input type="text" id="search-input" class="search-box" placeholder="搜尋淨水場...">
+                </div>
+                <div id="plants-list" class="plants-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet 地圖庫 -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>

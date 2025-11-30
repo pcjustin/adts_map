@@ -1,0 +1,17 @@
+{
+  "name": "adts-map",
+  "version": "1.0.0",
+  "description": "Water treatment plants data visualization map",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["water", "map", "visualization"],
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5"
+  }
+}
